@@ -51,36 +51,6 @@
       <span aria-hidden="true"></span>
     </a>
   </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <!-- <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div> -->
-
-    </div>
-
   </div>
 </nav>
 
@@ -132,7 +102,7 @@
                   <span>Paper</span>
                 </a>
               </span>
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://arxiv.org/abs/2011.12948"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -140,7 +110,7 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Video Link. -->
               <span class="link-block">
                 <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
@@ -152,7 +122,7 @@
                 </a>
               </span>
               <!-- Code Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://github.com/google/nerfies"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -160,7 +130,7 @@
                   </span>
                   <span>Code</span>
                   </a>
-              </span>
+              </span> -->
               <!-- Dataset Link. -->
               <span class="link-block">
                 <a href="https://github.com/google/nerfies/releases/tag/0.1"
@@ -171,7 +141,6 @@
                   <span>Data</span>
                   </a>
             </div>
-
           </div>
         </div>
       </div>
@@ -256,42 +225,7 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            We present a hierarchical policy-learning frame-
-            work that enables a legged humanoid to cooperatively carry
-            extended loads with a human partner using only haptic cues
-            for intent inference. At the upper tier, a lightweight behavior-
-            cloning network consumes six-axis force/torque streams from
-            dual wrist-mounted sensors and outputs whole-body planar
-            velocity commands that capture the leader’s applied forces. At
-            the lower tier, a deep-reinforcement-learning policy—trained
-            under randomized payloads (0–3 kg) and friction conditions
-            in Isaac Gym and validated in MuJoCo and on a real Uni-
-            tree G1—maps these high-level twists to stable, under-load
-            joint trajectories. By decoupling intent interpretation (force
-            → velocity) from legged locomotion (velocity → joints), our
-            method combines intuitive responsiveness to human inputs with
-            robust, load-adaptive walking. We collect training data without
-            motion-capture or markers—only synchronized RGB video and
-            F/T readings—employing SAM2 and WHAM to extract 3D
-            human pose and velocity. In real-world trials, our humanoid
-            achieves cooperative carry-and-move performance (completion
-            time, trajectory deviation, velocity synchrony, and follower-
-            force) on par with a blindfolded human-follower baseline.
-            This work is the first to demonstrate learned haptic guidance
-            fused with full-body legged control for fluid human–humanoid
-            co–manipulation.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
-
+  
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -303,6 +237,39 @@
       </div>
     </div>
     <!--/ Paper video. -->
+
+
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present a hierarchical policy-learning framework that enables a legged humanoid to cooperatively carry
+            extended loads with a human partner using only haptic cues for intent inference. At the upper tier, a lightweight behavior 
+            cloning network consumes six-axis force/torque streams from
+            dual wrist-mounted sensors and outputs whole-body planar
+            velocity commands that capture the leader’s applied forces. At
+            the lower tier, a deep-reinforcement-learning policy—trained
+            under randomized payloads (0–3 kg) and friction conditions
+            in Isaac Gym and validated in MuJoCo and on a real Unitree G1—maps these high-level twists to stable, under-load
+            joint trajectories. By decoupling intent interpretation (force
+            → velocity) from legged locomotion (velocity → joints), our
+            method combines intuitive responsiveness to human inputs with
+            robust, load-adaptive walking. We collect training data without
+            motion-capture or markers—only synchronized RGB video and
+            F/T readings—employing SAM2 and WHAM to extract 3D
+            human pose and velocity. In real-world trials, our humanoid
+            achieves cooperative carry-and-move performance (completion
+            time, trajectory deviation, velocity synchrony, and follower force) on par with a blindfolded human-follower baseline.
+            This work is the first to demonstrate learned haptic guidance
+            fused with full-body legged control for fluid human–humanoid
+            co–manipulation.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
   </div>
 </section>
 
@@ -337,13 +304,12 @@
       <!-- Visual Effects. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
+          <h2 class="title is-3">Data Collection</h2>
           <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
+            Using ....etc.
           </p>
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
+            <source src="./static/videos/dc.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -352,15 +318,14 @@
 
       <!-- Matting. -->
       <div class="column">
-        <h2 class="title is-3">Matting</h2>
+        <h2 class="title is-3">Reinforcement Learning</h2>
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
+              As a ...etc 
             </p>
             <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
+              <source src="./static/videos/rl.mp4"
                       type="video/mp4">
             </video>
           </div>
