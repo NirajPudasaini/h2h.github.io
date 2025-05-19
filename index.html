@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="H2-COMPACT: Human–Humanoid Co-Manipulation via Adaptive Contact Trajectory Policies">
+  <meta name="keywords" content="H2-COMPACT, Human–Humanoid Co-Manipulation, Adaptive Contact Trajectory Policies">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>H2-COMPACT: Human–Humanoid Co-Manipulation via Adaptive
     Contact Trajectory Policies</title>
@@ -113,14 +113,15 @@
               </span> -->
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                <!-- <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
                   </span>
                   <span>Video</span>
                 </a>
-              </span>
+              </span> -->
+
               <!-- Code Link. -->
               <!-- <span class="link-block">
                 <a href="https://github.com/google/nerfies"
@@ -231,8 +232,9 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <video id="paper-video" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/masked_comanipulation.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
     </div>
@@ -249,7 +251,7 @@
             extended loads with a human partner using only haptic cues for intent inference. At the upper tier, a lightweight behavior 
             cloning network consumes six-axis force/torque streams from
             dual wrist-mounted sensors and outputs whole-body planar
-            velocity commands that capture the leader’s applied forces. At
+            velocity commands that capture the leader's applied forces. At
             the lower tier, a deep-reinforcement-learning policy—trained
             under randomized payloads (0–3 kg) and friction conditions
             in Isaac Gym and validated in MuJoCo and on a real Unitree G1—maps these high-level twists to stable, under-load
@@ -322,14 +324,23 @@
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              As a ...etc 
+
             </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/rl.mp4"
-                      type="video/mp4">
+            <div class="content">
+              <h3 class="title is-4 has-text-centered">Before Reinforcement Learning with Load Adaptation</h3>
+              <video id="before-rl" autoplay loop muted controls playsinline height="100%">
+                <source src="./static/videos/before_rl.mp4" type="video/mp4">
+              </video>
+              
+              <h3 class="title is-4 has-text-centered">After Reinforcement Learning with Load Adaptation</h3>
+              <video id="after-rl" autoplay loop muted controls playsinline height="100%">
+                <source src="./static/videos/after_rl.mp4" type="video/mp4">
+              </video>
+            </div>
+            <!-- <video id="matting-video" controls playsinline height="100%"> -->
+              <!-- <source src="./static/videos/rl.mp4" type="video/mp4"> -->
             </video>
           </div>
-
         </div>
       </div>
     </div>
